@@ -7,34 +7,30 @@ import com.example.exercicio1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    // Declara o binding
     private lateinit var binding: ActivityMainBinding
-
-    // Taxa de conversão Euro → Dólar
     private val taxaConversao = 1.1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Inicializa o binding e define a view principal
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Ação do botão Converter
         binding.buttonConverter.setOnClickListener {
             val valorEurosStr = binding.editTextEuros.text.toString()
 
             if (valorEurosStr.isNotEmpty()) {
-                val valorEuros = valorEurosStr.toDouble()
-                val valorDolares = valorEuros * taxaConversao
+                val valorEuros = valorEurosStr.toDoubleOrNull()
 
-                // Arredondando o valor para 2 casas decimais
-                val valorDolaresFormatado = String.format("%.2f", valorDolares)
-
-                // Exibindo o resultado na TextView
-                binding.textViewResultado.text = "Resultado: $valorDolaresFormatado USD"
+                if (valorEuros != null) {
+                    val valorDolares = valorEuros * taxaConversao
+                    val valorDolaresFormatado = String.format("%.2f", valorDolares)
+                    binding.textViewResultado.text = "Resultado: $valorDolaresFormatado USD"
+                } else {
+                    Toast.makeText(this, "Insira um número válido", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                Toast.makeText(this, "Por favor, insira o valor em euros", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 }

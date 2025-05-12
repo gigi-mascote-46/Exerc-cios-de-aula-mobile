@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exercicio 5</string>
+
+    <string-array name="moedas_array">
+        <item>Dólar</item>
+        <item>Iene Japonês</item>
+        <item>Libra Esterlina</item>
+        <item>Franco Suiço</item>
+        <item>Real do Brasil</item>
+    </string-array>
+
+</resources>

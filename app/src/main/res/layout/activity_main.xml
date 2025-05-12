@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,35 +8,49 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
+    <!-- Título "Conversor de Moeda" -->
     <TextView
-        android:id="@+id/textViewTitulo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Conversor Euro → Dólar"
+        android:text="Conversor de Moeda"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:layout_marginBottom="24dp" />
 
+    <!-- Campo para inserir valor em euros -->
     <EditText
         android:id="@+id/editTextEuros"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira o valor em euros"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
+        android:hint="Insira o valor em euros"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="24dp" />
+        android:minHeight="48dp"
+        android:textSize="18sp" />
 
+    <!-- Spinner para selecionar a moeda -->
+    <Spinner
+        android:id="@+id/spinnerMoeda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:minHeight="48dp" />
+
+    <!-- Botão de conversão -->
     <Button
         android:id="@+id/buttonConverter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Converter"
-        android:textColor="#FFFFFF"
         android:backgroundTint="#6C4AB6"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginBottom="40dp"
+        android:padding="12dp" />
 
+    <!-- Exibição do resultado -->
     <TextView
         android:id="@+id/textViewResultado"
         android:layout_width="match_parent"
@@ -45,5 +58,6 @@
         android:text="Resultado"
         android:textSize="30sp"
         android:gravity="center"
-        android:layout_marginTop="20dp" />
+        android:textColor="#000000"
+        android:layout_marginTop="24dp" />
 </LinearLayout>
