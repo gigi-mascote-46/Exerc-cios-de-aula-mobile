@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Exercicio12</string>
+
+    <!-- Splash -->
+    <string name="splash_screen">Splash Screen</string>
+    <string name="splash_message">A preparar o seu pedido...</string>
+    <string name="todo">Imagem de fundo da splash screen</string>
+    <string name="welcome_message">PEDIDO PRONTO!</string>
+
+    <!-- Main -->
+    <string name="hamburguer">Hambúrguer</string>
+    <string name="pizza">Pizza</string>
+    <string name="sushi">Sushi</string>
+    <string name="quantidade">Quantidade</string>
+
+    <string name="efetuar_pedido">Efetuar Pedido</string>
+    <string name="quantidade_invalida">Quantidade inválida</string>
+    <string name="seleciona_pelo_menos_um">Seleciona pelo menos um produto</string>
+    <string name="pedido_pronto">PEDIDO PRONTO!</string>
+
+    <string name="quantidade_burger">Quantidade de hambúrgueres</string>
+    <string name="quantidade_pizza">Quantidade de pizzas</string>
+    <string name="quantidade_sushi">Quantidade de sushis</string>
+
+    <!-- Summary -->
+    <string name="resumo_do_pedido">Resumo do Pedido:</string>
+    <string name="total_0_00">Total: 0.00€</string>
+    <string name="total_pedido">Total do pedido: %.2f€</string>
+    <string name="pedido_item">%1$d x %2$s = %.2f€</string>
+
+</resources>

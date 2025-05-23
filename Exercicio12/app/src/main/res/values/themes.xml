@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Cores quentes -->
+    <color name="colorPrimary">#D84315</color>        <!-- Vermelho escuro -->
+    <color name="colorPrimaryVariant">#BF360C</color> <!-- Vermelho ainda mais escuro -->
+    <color name="colorSecondary">#FF6F00</color>      <!-- Laranja dourado -->
+    <color name="colorSecondaryVariant">#FF8F00</color><!-- Laranja claro -->
+    <color name="colorBackground">#FFF3E0</color>     <!-- Amarelo muito claro -->
+    <color name="colorSurface">#FFE0B2</color>        <!-- Amarelo dourado claro -->
+    <color name="colorError">#B00020</color>          <!-- Vermelho erro padrão -->
+
+    <!-- Textos -->
+    <color name="colorOnPrimary">#FFFFFF</color>      <!-- Branco para texto sobre primary -->
+    <color name="colorOnSecondary">#000000</color>    <!-- Preto para texto sobre secondary -->
+    <color name="colorOnBackground">#000000</color>   <!-- Preto para texto sobre fundo -->
+    <color name="colorOnSurface">#000000</color>      <!-- Preto para texto sobre surface -->
+
+    <!-- Tema personalizado -->
+    <style name="Theme.Exercicio12" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Cores da aplicação -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!-- Textos -->
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <!-- Tipografia e botões -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorPrimary">@color/colorOnBackground</item>
+        <item name="android:buttonStyle">@style/Widget.MaterialComponents.Button</item>
+    </style>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagem de fundo com proporção 9:16 -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/main_bg"
+        android:alpha="0.4"
+        android:contentDescription="@string/todo" />
+
+    <!-- Conteúdo principal em LinearLayout vertical, com padding para não encostar nas bordas -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Item Hambúrguer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgBurger"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/burger"
+                android:contentDescription="@string/hamburguer" />
+
+            <CheckBox
+                android:id="@+id/cbBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hamburguer"
+                android:layout_marginStart="8dp" />
+
+            <EditText
+                android:id="@+id/etQtyBurger"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:hint="@string/quantidade_burger"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Item Pizza -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgPizza"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pizza"
+                android:contentDescription="@string/pizza" />
+
+            <CheckBox
+                android:id="@+id/cbPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pizza"
+                android:layout_marginStart="8dp" />
+
+            <EditText
+                android:id="@+id/etQtyPizza"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:hint="@string/quantidade_pizza"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Item Sushi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgSushi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sushi"
+                android:contentDescription="@string/sushi" />
+
+            <CheckBox
+                android:id="@+id/cbSushi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sushi"
+                android:layout_marginStart="8dp" />
+
+            <EditText
+                android:id="@+id/etQtySushi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:hint="@string/quantidade_sushi"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEfetuarPedido"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/efetuar_pedido"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</FrameLayout>
