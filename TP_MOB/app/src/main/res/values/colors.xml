@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="outono_primaria">#FFA726</color> <!-- Example color -->
+    <color name="outono_primaria_escura">#F57C00</color> <!-- Example color -->
+    <color name="outono_fundo">#FFF3E0</color> <!-- Example color -->
+    <color name="outono_secundaria">#8D6E63</color> <!-- Example color -->
+    <color name="outono_destaque2">#A1887F</color> <!-- Example color -->
+    <color name="outono_texto">#4E342E</color> <!-- Example color -->
+
+    <!-- Consider adding specific colors for dark theme if needed -->
+    <color name="outono_texto_dark">#3E2723</color> <!-- Example dark theme text color -->
+    <color name="outono_fundo_dark">#FFE0B2</color> <!-- Example dark theme background color -->
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlunoApp</string>
+    <string name="salvar">Salvar</string>
+    <string name="ordenar_a_z">Ordenar A-Z</string>
+    <string name="email">Email</string>
+    <string name="limpar">Limpar</string>
+    <string name="nome">Nome</string>
+</resources>

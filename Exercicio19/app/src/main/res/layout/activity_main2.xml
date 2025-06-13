@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagem do destino -->
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:ignore="HardcodedText"
+        android:contentDescription="Imagem do destino"/>
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/detailName"
+        android:layout_below="@id/detailImage"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Localização -->
+    <TextView
+        android:id="@+id/detailLocation"
+        android:layout_below="@id/detailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/detailPrice"
+        android:layout_below="@id/detailLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009688" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/detailDescription"
+        android:layout_below="@id/detailPrice"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Botão de voltar -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar"
+        tools:ignore="VisualLintButtonSize" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="Nome"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/local"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtDataInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="aaaa/mm/dd"
+            android:hint="@string/data_in_cio_aaaa_mm_dd"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtDataFim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="aaaa/mm/dd"
+            android:hint="@string/data_fim_aaaa_mm_dd"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pre_o"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtDuracao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="00H00"
+            android:hint="@string/dura_o_horas"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/edtEdicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edi_o"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

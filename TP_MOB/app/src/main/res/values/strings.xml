@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CESAE Cursos</string>
+    <string name="course_image">Imagem do Curso</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Excluir</string>
+    <string name="title_activity_sobre">Sobre</string>
+
+    <!-- Menu items -->
+    <string name="menu_order_name_asc">Ordenar por Nome (A-Z)</string>
+    <string name="menu_order_name_desc">Ordenar por Nome (Z-A)</string>
+    <string name="menu_order_date_asc">Ordenar por Data (↑)</string>
+    <string name="menu_order_date_desc">Ordenar por Data (↓)</string>
+    <string name="menu_about">Sobre</string>
+    <string name="data_fim_aaaa_mm_dd">Data Fim (AAAA-MM-DD)</string>
+    <string name="salvar">Salvar</string>
+    <string name="data_in_cio_aaaa_mm_dd">Data Início (AAAA-MM-DD)</string>
+    <string name="dura_o_horas">Duração (horas)</string>
+    <string name="edi_o">Edição</string>
+    <string name="local">Local</string>
+    <string name="pre_o">Preço</string>
+<!-- Before -->
+    <string name="desc_add_course">Enter the course details below.</string>
+
+    <!-- After -->
+    <string name="string_add_course_description">Enter the course details below.</string>
+    <!-- or -->
+    <string name="text_add_course_description">Enter the course details below.</string>
+</resources>

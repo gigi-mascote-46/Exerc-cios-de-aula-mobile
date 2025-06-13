@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Catálogo de Viagens</string>
+    <string name="titulo_destinos">Destinos Turísticos</string>
+    <string name="info">INFO</string>
+    <string name="voltar">Voltar</string>
+    <string name="localizacao">Localização: %s</string>
+    <string name="preco">Preço: €%.2f</string>
+    <string name="descricao_destino">Descrição</string>
+    <string name="detalhes_destino">Detalhes do Destino</string>
+    <string name="imagem_destino">Imagem do destino</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+</resources>

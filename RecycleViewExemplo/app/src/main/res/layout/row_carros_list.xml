@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="4dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/texto_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/texto_ano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ano"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/texto_cor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/texto_matricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matrícula"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/texto_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preço"
+        android:textSize="14sp"
+        android:textColor="#4CAF50"
+        android:textStyle="italic" />
+</LinearLayout>

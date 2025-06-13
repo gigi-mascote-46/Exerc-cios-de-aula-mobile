@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="texto_modelo" type="id" />
+    <item name="texto_ano" type="id" />
+    <item name="texto_matricula" type="id" />
+    <item name="texto_preco" type="id" />
+    <item name="texto_cor" type="id" />
+</resources>

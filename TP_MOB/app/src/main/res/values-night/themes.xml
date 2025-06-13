@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TP_MOB" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- You might want to override primary/secondary for better dark mode contrast -->
+        <!-- <item name="colorPrimary">@color/outono_primaria_dark</item> -->
+        <!-- <item name="colorPrimaryVariant">@color/outono_primaria_escura_dark</item> -->
+        <!-- <item name="colorOnPrimary">@color/outono_fundo_dark</item> -->
+
+        <item name="android:windowBackground">@color/outono_texto</item> <!-- Or a specific dark background color -->
+        <item name="android:textColor">@color/outono_fundo</item> <!-- Or a specific dark text color -->
+
+        <!-- Status bar and navigation bar will inherit from the parent or can be overridden -->
+        <!-- <item name="android:statusBarColor">?attr/colorPrimaryVariant</item> -->
+        <!-- <item name="android:navigationBarColor">?attr/colorPrimary</item> -->
+    </style>
+</resources>

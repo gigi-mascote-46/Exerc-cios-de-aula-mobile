@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_nivel_bateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/bateria"
+        android:layout_margin="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    >
+
+    <TextClock
+        android:id="@+id/clock_horas_minutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+        android:format12Hour="hh:mm"
+        android:format24Hour="HH:mm"
+        android:timeZone="Europe/Lisbon"
+        android:textAlignment="center"
+        />
+
+    <TextClock
+        android:id="@+id/clock_segundos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:format12Hour="ss"
+        android:format24Hour="ss"
+        android:timeZone="Europe/Lisbon"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NovoExercicio</string>
+    <string name="_00_00">00:00</string>
+    <string name="bateria">Bateria</string>
+</resources>

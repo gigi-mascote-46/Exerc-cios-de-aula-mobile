@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Imagem do destino na lista -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/imagem_do_destino" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Localização -->
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_below="@id/nameText"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Preço -->
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_below="@id/locationText"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009688" />
+</RelativeLayout>

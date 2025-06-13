@@ -1,0 +1,10 @@
+<resources>
+
+        <string name="app_name">RecycleViewExemplo</string>
+        <string name="texto_ano">Ano: %1$d</string>
+        <string name="texto_cor">Cor: %1$s</string>
+        <string name="texto_matricula">Matrícula: %1$s</string>
+        <string name="texto_preco">Preço: €%1$.2f</string>
+
+
+</resources>

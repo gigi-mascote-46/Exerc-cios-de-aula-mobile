@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/detalhes_destino"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/imagem_destino"
+                android:background="@color/divider"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/textNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Paris" />
+
+            <TextView
+                android:id="@+id/textLocalizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/textNome"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Localização: França" />
+
+            <TextView
+                android:id="@+id/textPreco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/price_color"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/textLocalizacao"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="€1200.00" />
+
+            <TextView
+                android:id="@+id/textDescricaoLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descricao_destino"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/textPreco"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/textDescricaoLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura." />
+
+            <Button
+                android:id="@+id/buttonVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/textDescricao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:minHeight="48dp"
+                android:drawableStart="@drawable/ic_arrow_back"
+                android:drawablePadding="8dp"
+                style="@style/Widget.Material3.Button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
